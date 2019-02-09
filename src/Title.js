@@ -6,7 +6,7 @@ import myAvatar from './myAvatar.svg';
 export class Title extends Component {
   render() {
     return (
-		<div>
+		<div id='title'>
 			<Jumbotron>
 				<h1 className="display-5">Front-end Developer</h1>
 				<p className="lead">I'm a fast-learning web developer who is eager to learn new things!</p>
