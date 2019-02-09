@@ -1,13 +1,6 @@
-.App {
-  text-align: center;
-}
+/*leftover from react-app
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
+.default {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -18,15 +11,50 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  text-align: center;
+}*/
+
+.color-scheme {
+  color: #0052a4;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+
+.btn-outline-primary {
+  color: #0052a4 !important;
+  border-color: #0052a4 !important;
+  border-width:2px !important;
+  font-size:18px !important;
+  border-radius:20px !important;
+  font-weight:500 !important;
+}
+
+.btn-outline-primary:hover {
+  color: white !important;
+  background-color: #0052a4 !important;
+}
+
+.jumbotron {
+  background-color:white !important;
+  text-align:center;
+}
+
+.nav-bar-pref {
+  max-width:1200px;
+  margin: auto;
+}
+
+.my-logo {
+  padding-top:20px;
+}
+
+.avatar {
+  height:180px;
+}
+
+@media only screen and (min-width: 600px) {
+  .avatar {
+    height:225px;
   }
 }
