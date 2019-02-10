@@ -34,7 +34,7 @@ export class Works extends Component {
 									<a href="https://ethanvernon.github.io/story_dice/" target="_blank"><Button outline color="primary">Check it out</Button></a>
 								</CardBody>
 							</Card>
-
+							
 							<Card>
 								<CardImg top width="100%" src={pomo} alt="Card image cap" />
 								<CardBody>
