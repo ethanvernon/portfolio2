@@ -41,7 +41,7 @@ export class Works extends Component {
 									<CardTitle>Pomodoro Clock</CardTitle>
 									<CardSubtitle>React.js, JavaScript, HTML, CSS, Bootstrap</CardSubtitle>
 									<p className="summary">Summary</p>
-									<CardText>This clock lets you set a break time and a session time and rings a bell to let you know when time is up.</CardText>
+									<CardText>This clock lets you set break and session times and rings a bell to let you know when time is up.</CardText>
 									<a href="https://ethanvernon.github.io/pomodoro_clock/" target="_blank"><Button outline color="primary">Check it out</Button></a>
 								</CardBody>
 							</Card>
@@ -52,7 +52,7 @@ export class Works extends Component {
 									<CardTitle>NPC Generator</CardTitle>
 									<CardSubtitle>React.js, JavaScript, JSON, HTML, CSS</CardSubtitle>
 									<p className="summary">Summary</p>
-									<CardText>This was a single day project that takes the roll tables from the DMG and reduces them to the click of a button.</CardText>
+									<CardText>This single day project takes the roll tables from the DMG and reduces them to the click of a button.</CardText>
 									<a href="https://ethanvernon.github.io/npc_generator/" target="_blank"><Button outline color="primary">Check it out</Button></a>
 								</CardBody>
 							</Card>
@@ -63,7 +63,7 @@ export class Works extends Component {
 									<CardTitle>Party Manager</CardTitle>
 									<CardSubtitle>React.js, JavaScript, HTML, CSS</CardSubtitle>
 									<p className="summary">Summary</p>
-									<CardText>My second React app made accessing character information at the D&D table easier.</CardText>
+									<CardText>My second React app made accessing character and campaign information at the D&D table easier.</CardText>
 									<a href="https://ethanvernon.github.io/manage-party/" target="_blank"><Button outline color="primary">Check it out</Button></a>
 								</CardBody>
 							</Card>
@@ -74,7 +74,7 @@ export class Works extends Component {
 									<CardTitle>Ab Workout Generator</CardTitle>
 									<CardSubtitle>JavaScript, HTML, CSS, PHP, SQL</CardSubtitle>
 									<p className="summary">Summary</p>
-									<CardText>This single page app generates an ab workout of variable length.</CardText>
+									<CardText>This single page app generates an ab workout of variable length, compelete with audio and visual cues.</CardText>
 									<a href="http://fromgaming.com/ab-app-test-5.html" target="_blank"><Button outline color="primary">Check it out</Button></a>
 								</CardBody>
 							</Card>
@@ -82,7 +82,7 @@ export class Works extends Component {
 							<Card>
 								<CardImg top width="100%" src={spell} alt="Card image cap" />
 								<CardBody>
-									<CardTitle>Life Cleric Spell Chooser</CardTitle>
+									<CardTitle>Cleric Spell Chooser</CardTitle>
 									<CardSubtitle>React.js, JavaScript, JSON, HTML, CSS</CardSubtitle>
 									<p className="summary">Summary</p>
 									<CardText>This single page web app filters through a JSON array to help my friend pick his spells at the D&D table.</CardText>

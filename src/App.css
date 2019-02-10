@@ -227,8 +227,10 @@ body {
   max-width:420px;
   max-height:300px;
   margin:0px auto;
-  margin-top:20px;
+  margin-top:5px;
   border-radius:10px;
+  border:2px solid #cccccc;
+  box-shadow: 0px 3px 2px -2px #888888;
 }
 
 /*space*/
@@ -268,7 +270,7 @@ body {
 /*testimonials*/
 #testimonials {
   text-align: center;
-  margin-bottom:180px;
+  margin-bottom:130px;
 }
 
 /*Testimonials header*/
@@ -292,16 +294,29 @@ body {
 #testimonials h2 {
   font-size:20px;
   font-weight: 800;
+  color:#0052a4;
 }
 
 #testimonials h3 {
   font-size:16px;
   font-weight:300;
+  margin-bottom:60px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------Call to action------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------*/
+
+#cta-wrapper {
+  background-color:#0052a4;
+  margin-bottom:0px;
+}
+
+#cta-block {
+  background-color:#0052a4;
+  height:100px;
+  margin-bottom:-180px;
+}
 
 #call-to-action {
   background-color:#293347;
@@ -310,12 +325,11 @@ body {
   text-align: center;
   margin-left:20px;
   margin-right:20px;
-  margin-top:-850px;
 }
 
 #call-to-action .container {
   padding-top: 56px;
-  margin-bottom:50px;
+  margin-bottom:0px;
 }
 
 #call-to-action .col-md-4 {
@@ -351,18 +365,20 @@ body {
 /*---------------------------------------------------------------Bottom--------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
+/*foot height, space, color*/
 #bottom {
-  height:800px;
-  padding-top:200px;
+  height:600px;
+  padding-top:100px;
   background-color: #0052a4;
   text-align:center;
 }
 
+/*ethan vernon ant head*/
 #bottom .my-logo {
-  margin-top:100px;
   width:300px;
 }
 
+/*quote, slightly less white*/
 #bottom h1 {
   font-size:24px;
   color:#d8d8d8;
@@ -370,33 +386,54 @@ body {
   font-weight:400;
 }
 
-#bottom .my-links {  
+/*space for buttons*/
+#bottom .my-links {
   margin: 80px 20px;
 }
 
+/*space between buttons*/
 #bottom .fa-layers {
   margin: 0px 20px;
 }
 
-#bottom .icon-circles {
+/*non-hover color for circles*/
+#bottom .icon-circles-white {
   color:white;
+  border: 5px solid #0052a4;
+  border-radius:50%;
 }
 
-#bottom .icon-circles:hover, #bottom .icon-inners:hover {
-  cursor:pointer;
+/*hover color for circles*/
+#bottom .icon-circles-dark {
+  color:#0052a4;
+  border: 5px solid white;
+  border-radius:50%;
 }
 
-#bottom .icon-inners {
+/*non-hover icon color*/
+#bottom .icon-inners-dark {
   color:#0052a4;
   margin-left:8px;
 }
 
+/*hover color for icons*/
+#bottom .icon-inners-white {
+  color:white;
+  margin-left:8px;
+}
+
+/*pointer on hover*/
+#bottom .icon-circles:hover, #bottom .icon-inners:hover {
+  cursor:pointer;
+}
+
+/*less white copyright font*/
 #copyright {
   color:#d8d8d8;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------Media queries-------------------------------------------------*/
+/*---------------------------------------------------------------Media queries 767px-------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 767px) {
@@ -412,15 +449,46 @@ body {
 
   /*too much space on large screen*/
   #bottom {
-    padding-top:150px;
+    padding-top:50px;
   }
 
-  /*too much space on large screen*/
-  #bottom .my-logo {
-    margin-top:50px;
+  /*cards need uniformity when displayed adjacent*/
+  #works .card {
+    height:670px;
+    padding:0px 5px;    
+    margin-bottom:30px;
   }
 
+  /*cards need uniformity when displayed adjacent*/
+  #works .card-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*cards need uniformity when displayed adjacent*/
+  #works .card-subtitle {
+    height:48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*cards need uniformity when displayed adjacent*/
+  #works .card-text {  
+    height:108px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------Media queries 1000px------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 1000px) {
   /*avatar can be a bit bigger on large screens*/
@@ -432,6 +500,38 @@ body {
   /*bigger for large screen*/
   #title h1 {
     font-size:48px;
+  }  
+
+  /*cards need uniformity when displayed adjacent*/
+  #works .card {
+    padding:0px 5px;
+  }
+
+  /*cards need uniformity when displayed adjacent*/
+  #works .card-title {
+    height:72px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*cards need uniformity when displayed adjacent*/
+  #works .card-subtitle {
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*cards need uniformity when displayed adjacent*/
+  #works .card-text {
+    height:108px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
