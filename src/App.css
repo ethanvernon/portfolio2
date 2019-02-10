@@ -54,9 +54,10 @@ body {
   margin: auto;
 }
 
-/*logo is slightly off-centered vertically, this fixes it*/
+/*logo is slightly off-centered vertically, this fixes it, and width*/
 .my-logo {
-  padding-top:25px;
+  width:160px;
+  padding-top:18px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------*/
@@ -207,7 +208,7 @@ body {
 #works .card {
   max-width:500px;
   margin:auto;
-  margin-bottom:12px;
+  margin-bottom:20px;
   border-color: #0052a4;
   border-radius:10px;
   margin-right:20px;
@@ -227,10 +228,15 @@ body {
   max-width:420px;
   max-height:300px;
   margin:0px auto;
-  margin-top:5px;
+  margin-top:8px;
   border-radius:10px;
   border:2px solid #cccccc;
   box-shadow: 0px 3px 2px -2px #888888;
+}
+
+/*inline isn't working some reason so sets width of image when container is small like on mobile*/
+#works .card-img-top {
+  width:95%;
 }
 
 /*space*/
@@ -277,13 +283,18 @@ body {
 #testimonials h1 {
   font-size:24px;
   font-weight:bold;
+  margin-bottom:50px;
+}
+
+#testimonials .description {
+  font-size:20px;
   margin-bottom:40px;
 }
 
 #testimonials p {
   font-size:18px;
   line-height:27px;
-  margin-bottom:40px;
+  margin-bottom:30px;
 }
 
 #testimonials .quote {

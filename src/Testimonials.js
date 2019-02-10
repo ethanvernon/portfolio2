@@ -12,7 +12,7 @@ export class Testimonials extends Component {
 						<h1>
 							Testimonials
 						</h1>
-						<p>
+						<p className='description'>
 							People have said some nice things about me...
 						</p>
 						<p className="quote">
