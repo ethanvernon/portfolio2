@@ -1,7 +1,7 @@
 {
-  "main.css": "/portfolio2/static/css/main.99577881.chunk.css",
-  "main.js": "/portfolio2/static/js/main.041d6146.chunk.js",
-  "main.js.map": "/portfolio2/static/js/main.041d6146.chunk.js.map",
+  "main.css": "/portfolio2/static/css/main.de0e01ac.chunk.css",
+  "main.js": "/portfolio2/static/js/main.9ebf40d3.chunk.js",
+  "main.js.map": "/portfolio2/static/js/main.9ebf40d3.chunk.js.map",
   "static/css/1.c9f5b3cc.chunk.css": "/portfolio2/static/css/1.c9f5b3cc.chunk.css",
   "static/js/1.71cc5fd0.chunk.js": "/portfolio2/static/js/1.71cc5fd0.chunk.js",
   "static/js/1.71cc5fd0.chunk.js.map": "/portfolio2/static/js/1.71cc5fd0.chunk.js.map",
@@ -20,9 +20,9 @@
   "static/media/github-brands.svg": "/portfolio2/static/media/github-brands.c58fda8e.svg",
   "static/media/codepen-brands.svg": "/portfolio2/static/media/codepen-brands.416f1532.svg",
   "static/media/logo.svg": "/portfolio2/static/media/logo.588a78b9.svg",
-  "static/css/main.99577881.chunk.css.map": "/portfolio2/static/css/main.99577881.chunk.css.map",
   "static/css/1.c9f5b3cc.chunk.css.map": "/portfolio2/static/css/1.c9f5b3cc.chunk.css.map",
+  "static/css/main.de0e01ac.chunk.css.map": "/portfolio2/static/css/main.de0e01ac.chunk.css.map",
   "index.html": "/portfolio2/index.html",
-  "precache-manifest.7bb7d6cd8083474d361bcf03eaaf2106.js": "/portfolio2/precache-manifest.7bb7d6cd8083474d361bcf03eaaf2106.js",
+  "precache-manifest.e6dc0ab4fb3f6afc0eaaefc5d6846a52.js": "/portfolio2/precache-manifest.e6dc0ab4fb3f6afc0eaaefc5d6846a52.js",
   "service-worker.js": "/portfolio2/service-worker.js"
 }
