@@ -22,9 +22,11 @@ export class CallToAction extends Component {
 							</p>
 						</Col>
 						<Col md='4'>
+							<a href ="http://www.fromgaming.com/test/contact.html">
 							<Button outline color="primary">
 								Get in touch
 							</Button>
+							</a>
 						</Col>
 					</Row>
 				</Container>

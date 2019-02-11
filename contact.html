@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="http://www.fromgaming.com/test/css/bootstrap.min.css" rel="stylesheet">
+    <link type='text/css' rel='stylesheet' href='http://www.fromgaming.com/test/contact.css' />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Ethan Vernon | Contact</title>
+  </head>
+
+<body>
+
+
+
+	<?php
+	//declare variables for form and errors
+	$name = $email = $subject = $message = "";
+	
+
+
+	//check for post
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+	//reset errors
+	$nameErr = $emailErr = $subjectErr = $messageErr = "";
+
+		if (empty($_POST["name"])) {
+			$nameErr = "</br>^ Name is required";
+		} else {
+			$name = test_input($_POST["name"]);
+			// check if name only contains letters and whitespace
+			if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+		  		$nameErr = "</br>^ Only letters and white space allowed"; 
+			}
+		}
+
+		if(empty($_POST['email'])) {
+			$emailErr = "</br>^ E-mail is required";
+		} else {
+
+			//remove illegal characters from email
+			$email = test_input($_POST["email"]);
+			$email = filter_var($email, FILTER_SANITIZE_EMAIL);
+
+			//validate e-mail
+			if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+				echo("</br>^ $email is not a valid email address");
+			} 
+		}
+		  
+		if (empty($_POST['message'])) {
+			$messageErr = "</br>^ Message is required";
+		} else {
+			$message = test_input($_POST["message"]);		
+		}
+
+
+		
+
+
+		$recipient = "ethan@fromgaming.com";
+		$subject = "My portfolio website";
+		$formcontent="From: $email \n Message: $message";
+		$mailheader = "MIME-Version: 1.0" . "\r\n";
+		$mailheader .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+		$mailheader .= "From: $email \r\n";
+
+		if ($messageErr || $emailErr || $nameErr) {
+			//do nothing
+		} else {	
+			$mail_sent = mail($recipient, $subject, $formcontent, $mailheader);
+			$name = $email = $subject = $message = "";
+			?>
+			<script>
+				window.location = 'http://fromgaming.com/thankyou.html';
+			</script>
+			<?php
+		}
+
+		
+
+
+	}
+
+	function test_input($data) {
+	    $data = trim($data);    
+	    $data = stripslashes($data);
+	    $data = htmlspecialchars($data);
+	    return $data;
+	}
+	?>
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------Navbar-------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://www.fromgaming.com/"><img src="http://localhost:3000/static/media/logo.588a78b9.svg"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+	        	<a class='back-button' href="http://www.fromgaming.com/">
+	        		<span class="glyphicon glyphicon-remove" aria-label="go back"></span>
+	        	</a>
+        </li>
+      </ul>
+</nav>
+
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------Header-------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+
+<div class='contact-top'>
+	<div class='contact-avatar'>
+		<img class='my-avatar' src="http://localhost:3000/static/media/myAvatar.8a92f0a9.svg">
+	</div>
+
+	<div class='greeting'>
+		<h1>
+			Thanks for reaching out to me. What's on your mind?
+		</h1>
+	</div>
+
+</div>
+
+
+
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------Form---------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+
+
+<div class="container" id="contact-container">
+
+	<form id='contact-form' method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+			
+		<div class='row contact-bumpers'>
+			<div class='col-sm-6'>
+				<div class="form-group">
+					<label class='contact-label' for="name">
+						<span class="required">
+							Name:
+						</span>
+					</label><br>
+					
+					<input type="text" class="form-control" id="contact-name" name="name" value="<?php echo $name;?>" placeholder="Your Name" required="required" tabindex="1" />
+					<span class="contact-error">
+						<?php echo $nameErr;?>
+					</span>
+				</div>	
+			</div>
+
+			<div class='col-sm-6'>
+				<div class="form-group">
+					<label class='contact-label' for="email">
+						<span class="required">
+							Email:
+						</span>
+					</label><br>
+
+					<input type="email" class="form-control" id="contact-email" name="email" value="<?php echo $email;?>" placeholder="Your Email" tabindex="2" required="required" />
+					<span class="contact-error">
+						<?php echo $emailErr;?>
+					</span>
+				</div> 
+			</div> 
+		</div>
+		
+		<div class='row contact-bumpers'>			
+			<div class='col-sm-12'>	
+				<div class="form-group">	          
+					<label class='contact-label' for="message">
+						<span class="required">
+							Message:
+						</span>
+					</label><br>
+
+					<textarea id="contact-message" class="form-control" name="message" placeholder="Please write your message here." tabindex="5" rows='6' required="required" ><?php echo $message;?></textarea>
+					<span class="contact-error">
+						<?php echo $messageErr;?>
+					</span>
+				</div> 
+			</div>
+		</div>
+
+		<div class='row no-gutters'>
+			<div class='col-sm-12'>
+				<div class='button-div'>
+					<button name="submit" class='btn btn-default' type="submit" id="contact-submit" >Submit</button> 
+				</div>
+			</div>
+		</div>
+
+	</form>
+
+</div>
+
+
+
+</body>
+
+
+</html>
