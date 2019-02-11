@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Button } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import logoInvert from './logo-invert.svg';
-import linkedin from './linkedin-in-brands.svg';
-import github from './github-brands.svg';
-import codepen from './codepen-brands.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
@@ -82,7 +79,7 @@ export class Bottom extends Component {
 					
 
 					<span className="fa-layers fa-fw">
-						<a href="https://github.com/ethanvernon" target="_blank" onMouseEnter={() => this.toggleHover('github')} onMouseLeave={() => this.toggleHover('github')}>
+						<a href="https://github.com/ethanvernon" target="_blank" rel="noopener noreferrer" onMouseEnter={() => this.toggleHover('github')} onMouseLeave={() => this.toggleHover('github')}>
 						<FontAwesomeIcon icon={faCircle} size='2x' transform='grow-7' className={githubCircleColor}/>
 						<FontAwesomeIcon icon={ faGithub } size='1x' transform="grow-10" className={githubIconColor}/>
 						</a>
@@ -90,7 +87,7 @@ export class Bottom extends Component {
 				
 				
 					<span className="fa-layers fa-fw">
-						<a href="https://www.linkedin.com/in/ethanvernon/" target="_blank" onMouseEnter={() => this.toggleHover('linkedin')} onMouseLeave={() => this.toggleHover('linkedin')}>
+						<a href="https://www.linkedin.com/in/ethanvernon/" target="_blank" rel="noopener noreferrer" onMouseEnter={() => this.toggleHover('linkedin')} onMouseLeave={() => this.toggleHover('linkedin')}>
 						<FontAwesomeIcon icon={faCircle} size='2x' transform='grow-7 ' className={linkedinCircleColor}/>
 						<FontAwesomeIcon icon={ faLinkedinIn } size='1x' transform="grow-10 right-2" className={linkedinIconColor}/>
 						</a>
@@ -98,14 +95,14 @@ export class Bottom extends Component {
 				
 				
 					<span className="fa-layers fa-fw">
-					<a href="https://codepen.io/ethan-vernon/" target="_blank" onMouseEnter={() => this.toggleHover('codepen')} onMouseLeave={() => this.toggleHover('codepen')}>
+					<a href="https://codepen.io/ethan-vernon/" target="_blank" rel="noopener noreferrer" onMouseEnter={() => this.toggleHover('codepen')} onMouseLeave={() => this.toggleHover('codepen')}>
 						<FontAwesomeIcon icon={faCircle} size='2x' transform='grow-7' className={codepenCircleColor}/>
 						<FontAwesomeIcon icon={ faCodepen } size='1x' transform="grow-10" className={codepenIconColor}/>
 					</a></span>
 				
 				
 					<span className="fa-layers fa-fw">
-					<a href="mailto:ethan.vernon@colorado.edu" target="_blank" onMouseEnter={() => this.toggleHover('mail')} onMouseLeave={() => this.toggleHover('mail')}>
+					<a href="mailto:ethan.vernon@colorado.edu" target="_blank" rel="noopener noreferrer" onMouseEnter={() => this.toggleHover('mail')} onMouseLeave={() => this.toggleHover('mail')}>
 						<FontAwesomeIcon icon={faCircle} size='2x' transform='grow-7' className={mailCircleColor}/>
 						<FontAwesomeIcon icon={ faEnvelope } size='1x' transform="grow-10" className={mailIconColor}/>
 					</a></span>

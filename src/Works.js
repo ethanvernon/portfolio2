@@ -31,7 +31,7 @@ export class Works extends Component {
 									<CardSubtitle>React.js, JavaScript, GIMP, HTML, CSS</CardSubtitle>
 									<p className="summary">Summary</p>
 									<CardText>This creativity tool picks and rolls 3 of 18 dice at random and displays the results.</CardText>
-									<a href="https://ethanvernon.github.io/story_dice/" target="_blank"><Button outline color="primary">Check it out</Button></a>
+									<a href="https://ethanvernon.github.io/story_dice/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">Check it out</Button></a>
 								</CardBody>
 							</Card>
 							
@@ -42,7 +42,7 @@ export class Works extends Component {
 									<CardSubtitle>React.js, JavaScript, HTML, CSS, Bootstrap</CardSubtitle>
 									<p className="summary">Summary</p>
 									<CardText>This clock lets you set break and session times and rings a bell to let you know when time is up.</CardText>
-									<a href="https://ethanvernon.github.io/pomodoro_clock/" target="_blank"><Button outline color="primary">Check it out</Button></a>
+									<a href="https://ethanvernon.github.io/pomodoro_clock/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">Check it out</Button></a>
 								</CardBody>
 							</Card>
 
@@ -53,7 +53,7 @@ export class Works extends Component {
 									<CardSubtitle>React.js, JavaScript, JSON, HTML, CSS</CardSubtitle>
 									<p className="summary">Summary</p>
 									<CardText>This single day project takes the roll tables from the DMG and reduces them to the click of a button.</CardText>
-									<a href="https://ethanvernon.github.io/npc_generator/" target="_blank"><Button outline color="primary">Check it out</Button></a>
+									<a href="https://ethanvernon.github.io/npc_generator/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">Check it out</Button></a>
 								</CardBody>
 							</Card>
 
@@ -64,7 +64,7 @@ export class Works extends Component {
 									<CardSubtitle>React.js, JavaScript, HTML, CSS</CardSubtitle>
 									<p className="summary">Summary</p>
 									<CardText>My second React app made accessing character and campaign information at the D&D table easier.</CardText>
-									<a href="https://ethanvernon.github.io/manage-party/" target="_blank"><Button outline color="primary">Check it out</Button></a>
+									<a href="https://ethanvernon.github.io/manage-party/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">Check it out</Button></a>
 								</CardBody>
 							</Card>
 
@@ -75,7 +75,7 @@ export class Works extends Component {
 									<CardSubtitle>JavaScript, HTML, CSS, PHP, SQL</CardSubtitle>
 									<p className="summary">Summary</p>
 									<CardText>This single page app generates an ab workout of variable length, compelete with audio and visual cues.</CardText>
-									<a href="http://fromgaming.com/ab-app-test-5.html" target="_blank"><Button outline color="primary">Check it out</Button></a>
+									<a href="http://fromgaming.com/ab-app-test-5.html" target="_blank" rel="noopener noreferrer"><Button outline color="primary">Check it out</Button></a>
 								</CardBody>
 							</Card>
 
@@ -86,7 +86,7 @@ export class Works extends Component {
 									<CardSubtitle>React.js, JavaScript, JSON, HTML, CSS</CardSubtitle>
 									<p className="summary">Summary</p>
 									<CardText>This single page web app filters through a JSON array to help my friend pick his spells at the D&D table.</CardText>
-									<a href="https://ethanvernon.github.io/spell_selector2/" target="_blank"><Button outline color="primary">Check it out</Button></a>
+									<a href="https://ethanvernon.github.io/spell_selector2/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">Check it out</Button></a>
 								</CardBody>
 							</Card>
 

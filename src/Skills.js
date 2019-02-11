@@ -30,6 +30,7 @@ export class Skills extends Component {
 							<li>GIMP</li>
 							<li>Github</li>
 							<li>Github Pages</li>
+							<li>Sublime Text</li>
 							<li>Bootstrap</li>
 							<li>Codepen</li>
 							<li>Method Draw</li>
