@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/portfolio2/static/media/EthanVernonresume.0ea715d7.pdf"
   },
   {
-    "revision": "1176890402e7e1b9569b",
-    "url": "/portfolio2/static/css/main.e9d84f87.chunk.css"
+    "revision": "9cb9298f85179ebc4504",
+    "url": "/portfolio2/static/css/main.9afdc364.chunk.css"
   },
   {
     "revision": "d1259f8cc8dc449f043b18a42b224ee1",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/portfolio2/static/media/myAvatar.8a92f0a9.svg"
   },
   {
-    "revision": "1176890402e7e1b9569b",
-    "url": "/portfolio2/static/js/main.11768904.chunk.js"
+    "revision": "9cb9298f85179ebc4504",
+    "url": "/portfolio2/static/js/main.9cb9298f.chunk.js"
   },
   {
     "revision": "896c31488316b18557a8e50a667b3c8f",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/portfolio2/static/css/1.1af6fd28.chunk.css"
   },
   {
-    "revision": "9fcd882abc01f1fe41c83e5dc5920e57",
+    "revision": "37602d19f649cf31861745b84aae97f4",
     "url": "/portfolio2/index.html"
   }
 ];
