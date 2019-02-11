@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "05e4eb29e452cf6e677e3d2bc2d18e54",
-    "url": "/portfolio2/static/media/thumbnail-pomo.05e4eb29.png"
+    "revision": "896c31488316b18557a8e50a667b3c8f",
+    "url": "/portfolio2/static/media/thumbnail-dice.896c3148.png"
   },
   {
-    "revision": "9ebf40d36f79bdeb02b2",
-    "url": "/portfolio2/static/css/main.de0e01ac.chunk.css"
+    "revision": "54a4d2d9feaeb1eabb86",
+    "url": "/portfolio2/static/css/main.06bd4658.chunk.css"
   },
   {
-    "revision": "416f1532f1fcac5b23abb4b37db51e65",
-    "url": "/portfolio2/static/media/codepen-brands.416f1532.svg"
+    "revision": "d1259f8cc8dc449f043b18a42b224ee1",
+    "url": "/portfolio2/static/media/logo-invert.d1259f8c.svg"
   },
   {
-    "revision": "71cc5fd035f8453d5f94",
-    "url": "/portfolio2/static/js/1.71cc5fd0.chunk.js"
+    "revision": "08d01576a07ab169441e",
+    "url": "/portfolio2/static/js/1.08d01576.chunk.js"
   },
   {
     "revision": "099cc4b1c2dc80af7879",
@@ -32,12 +32,12 @@ self.__precacheManifest = [
     "url": "/portfolio2/static/media/myAvatar.8a92f0a9.svg"
   },
   {
-    "revision": "896c31488316b18557a8e50a667b3c8f",
-    "url": "/portfolio2/static/media/thumbnail-dice.896c3148.png"
+    "revision": "54a4d2d9feaeb1eabb86",
+    "url": "/portfolio2/static/js/main.54a4d2d9.chunk.js"
   },
   {
-    "revision": "9ebf40d36f79bdeb02b2",
-    "url": "/portfolio2/static/js/main.9ebf40d3.chunk.js"
+    "revision": "05e4eb29e452cf6e677e3d2bc2d18e54",
+    "url": "/portfolio2/static/media/thumbnail-pomo.05e4eb29.png"
   },
   {
     "revision": "3dc5eb54a479534005765851f0651cf3",
@@ -56,23 +56,11 @@ self.__precacheManifest = [
     "url": "/portfolio2/static/media/thumbnail-spell.fdde09cc.png"
   },
   {
-    "revision": "d1259f8cc8dc449f043b18a42b224ee1",
-    "url": "/portfolio2/static/media/logo-invert.d1259f8c.svg"
-  },
-  {
-    "revision": "8c0e426a91abdde421f2171ab9d64cc7",
-    "url": "/portfolio2/static/media/linkedin-in-brands.8c0e426a.svg"
-  },
-  {
-    "revision": "c58fda8eab8073d791d52dd27a9b7266",
-    "url": "/portfolio2/static/media/github-brands.c58fda8e.svg"
-  },
-  {
-    "revision": "71cc5fd035f8453d5f94",
+    "revision": "08d01576a07ab169441e",
     "url": "/portfolio2/static/css/1.c9f5b3cc.chunk.css"
   },
   {
-    "revision": "bb19c53d7db198929f83bd034008c316",
+    "revision": "c2ee3eadc115c0d86e43253b122f6fe6",
     "url": "/portfolio2/index.html"
   }
 ];
