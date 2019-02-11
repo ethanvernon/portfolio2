@@ -136,9 +136,63 @@ textarea {
 }
 
 
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------thank you page------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
 
+/*vertical alignment spacing*/
+#thank-you {
+	background-color: #293347;
+	color:white !important;	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align:center;
+	margin-top:20px;
+}
 
+/*smaller heading size for small screens*/
+#thank-you h1 {
+	color:white;
+	margin-left:auto;
+	margin-right:auto;
+	font-weight:bold;
+	font-size:25px;
+	margin:10px auto;
+}
 
+#thank-you h2 {
+	color:white;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:16px;
+}
+
+.thankyou {
+	margin-bottom:10px;
+}
+
+#thank-you img {
+	width:75%;	
+	margin: 0 auto;
+}
+
+#thank-you button {
+  color: white !important;
+  border-color: white !important;
+  border-width:2px !important;
+  font-size:14px ;
+  border-radius:20px !important;
+  font-weight:400 ;
+  background-color:#293347;
+}
+
+#thank-you button:hover {
+  color: #0052a4 !important;
+  background-color: white !important;
+
+  font-weight:600 ;
+}
 
 
 
@@ -157,6 +211,40 @@ textarea {
 	#contact-container {
 		width:80%;
 		max-width:675px;
+	}
+
+	#thank-you h1 {
+		font-size:32px;
+		margin:40px auto;
+	}
+
+	#thank-you img {
+		width:90%;
+		max-width:350px;
+	}
+
+	.thankyou {
+		margin-bottom:20px;
+	}
+
+	#thank-you
+	{
+		min-height:100vh;
+		justify-content: center;
+		margin-top:0px;
+	}
+
+	#thank-you h2 {
+		font-size:30px;
+	}
+
+	#thank-you button {
+		font-size:20px;
+		font-weight:400;
+	}
+
+	#thank-you button:hover {
+	  font-weight:600;
 	}
 }
 
@@ -187,5 +275,9 @@ textarea {
   /*smaller button on bigger screens*/
   #contact-container .btn-default {
 	  width:100px;
+	}
+
+	#thank-you button {
+		font-size:20px;
 	}
 }
