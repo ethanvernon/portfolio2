@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/portfolio2/static/media/EthanVernonresume.0ea715d7.pdf"
   },
   {
-    "revision": "9cb9298f85179ebc4504",
+    "revision": "872ae1bcd022970fda8d",
     "url": "/portfolio2/static/css/main.9afdc364.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/portfolio2/static/media/myAvatar.8a92f0a9.svg"
   },
   {
-    "revision": "9cb9298f85179ebc4504",
-    "url": "/portfolio2/static/js/main.9cb9298f.chunk.js"
+    "revision": "872ae1bcd022970fda8d",
+    "url": "/portfolio2/static/js/main.872ae1bc.chunk.js"
   },
   {
     "revision": "896c31488316b18557a8e50a667b3c8f",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/portfolio2/static/css/1.1af6fd28.chunk.css"
   },
   {
-    "revision": "37602d19f649cf31861745b84aae97f4",
+    "revision": "60df0a71580a2c250f349754240d17bd",
     "url": "/portfolio2/index.html"
   }
 ];
