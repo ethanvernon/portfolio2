@@ -218,6 +218,11 @@ body {
   font-size:18px;
   line-height:27px;
   margin-bottom:40px;
+  
+  max-width:90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*cards are too big for large screens, border changes*/

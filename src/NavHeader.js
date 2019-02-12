@@ -19,7 +19,7 @@ export class NavHeader extends Component {
 				</NavbarBrand>
 				<Nav className="ml-auto" navbar>
 					<NavItem>
-						<NavLink href='http://www.fromgaming.com/test/contact.html'>
+						<NavLink href='http://www.fromgaming.com/contact.html'>
 							<Button outline color="primary">
 								Contact Me
 							</Button>

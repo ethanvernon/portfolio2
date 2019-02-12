@@ -190,6 +190,7 @@ textarea {
 #thank-you button:hover {
   color: #0052a4 !important;
   background-color: white !important;
+  cursor:pointer;
 }
 
 
@@ -199,11 +200,6 @@ textarea {
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 500px) {
-  /*greeting can be bigger font*/
-  h1 {
-  	font-size:36px;
-  	margin: 40px 50px;
-  }
 
   /*a little more marigns on larger screens*/
 	#contact-container {
@@ -233,7 +229,7 @@ textarea {
 	}
 
 	#thank-you h2 {
-		font-size:30px;
+		font-size:24px;
 	}
 
 	#thank-you button {
