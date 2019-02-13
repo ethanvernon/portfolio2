@@ -311,10 +311,10 @@ textarea {
 		font-size:20px;
 	}
 
-	/*put in line with logo*/
+	/*put in line with logo
 	.navbar-nav {
 		margin:7.5px 15px;
-	}
+	}*/
 
 	/*glyphicon larger, padding change to center*/
 	.glyphicon {
@@ -329,12 +329,13 @@ textarea {
 	}
 
 	/*navbar too wide large screens*/
-	.nav.navbar.navbar-default {
+	.navbar-default {
 		max-width: 800px;
 	    margin-right: auto;
 	    margin-left: auto;
 	    border-right: 0px;
 	    border-left: 0px;
+	    border-radius:0;
 	}
 
 }
