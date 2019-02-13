@@ -20,7 +20,7 @@ export class Works extends Component {
 							My Projects
 						</h1>
 						<p>
-							I like to learn something new, and then make some projects to test it. Have an idea for me? <a href="/">Let me know.</a>
+							I like to learn something new, and then make some projects to test it. Have an idea for me? <a href="http://www.fromgaming.com/contact.html">Let me know.</a>
 						</p>
 						<CardDeck>
 
