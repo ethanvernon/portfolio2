@@ -9,6 +9,7 @@ import {Works} from './Works';
 import {Testimonials} from './Testimonials';
 import {Bottom} from './Bottom';
 import {CallToAction} from './CallToAction';
+import ReactGA from 'react-ga';
 
 
 export class Parent extends Component {
@@ -24,15 +25,10 @@ export class Parent extends Component {
 	    };
 
 		this.handleToggle = this.handleToggle.bind(this);
+		this.initReactGA = this.initReactGA.bind(this);
 	}
 
 	handleToggle(name) {
-		/*if (name==='github') {
-			let change = !this.state.githubColor;
-			console.log('githubColor changed to '+change);
-			this.setState({githubColor: change})
-		}*/
-
 		let change;
 
 		switch(name) {
@@ -60,7 +56,15 @@ export class Parent extends Component {
 			default:
 				break;
 		}
+	}
 
+	componentDidMount() {
+		this.initReactGA();
+	}
+
+	initReactGA() {
+		ReactGA.initialize('UA-121301053-1');
+		ReactGA.pageview('/');		
 	}
 
 
