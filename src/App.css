@@ -118,6 +118,11 @@ body {
   font-weight:800;
 }
 
+/*too wide on large screens*/
+#profile .col {
+  max-width:720px;
+}
+
 /*too small*/
 #profile p {
   font-size:20px;
