@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Button } from 'reactstrap';
-import resume from './EthanVernonresume.pdf';
+import resume from './EthanVernonResume.pdf';
 
 export class Profile extends Component {
   render() {

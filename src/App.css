@@ -119,7 +119,7 @@ body {
 }
 
 /*too wide on large screens*/
-#profile .col {
+#profile .container {
   max-width:720px;
 }
 
