@@ -115,6 +115,7 @@ body {
 #profile h1 {
   font-size:25px;
   margin-bottom:40px;
+  font-weight:800;
 }
 
 /*too small*/
@@ -122,6 +123,7 @@ body {
   font-size:20px;
   line-height:30px;
   margin-bottom:45px;
+  font-weight:300;
 }
 
 /*change primary blue to my website blue, other preferences*/
@@ -485,6 +487,11 @@ body {
     font-size:40px;
   }
 
+  /*bigger header*/
+  #profile h1 {
+    font-size:29px;
+  }
+
   /*too much space on large screen*/
   #bottom {
     padding-top:50px;
@@ -539,6 +546,11 @@ body {
   #title h1 {
     font-size:48px;
   }  
+
+  /*bigger header*/
+  #profile h1 {
+    font-size:32px;
+  }
 
   /*cards need uniformity when displayed adjacent*/
   #works .card {
