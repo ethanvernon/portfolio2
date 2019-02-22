@@ -10,8 +10,8 @@ import {
   Button } from 'reactstrap';
 
 export class NavHeader extends Component {
-  render() {
-    return (		
+	render() {
+	return (		
 		<div className='nav-bar-pref'>
 			<Navbar color="white" light expand="md">
 				<NavbarBrand href="/">
