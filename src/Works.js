@@ -8,6 +8,7 @@ import npc from './thumbnail-npc.png';
 import party from './thumbnail-party.png';
 import ab from './thumbnail-ab.png';
 import spell from './thumbnail-spell.png';
+import company from './thumbnail-company.png';
 
 export class Works extends Component {
   render() {
@@ -23,6 +24,17 @@ export class Works extends Component {
 							I like to learn something new, and then make some projects to test it. Have an idea for me? <a href="http://www.fromgaming.com/contact.html">Let me know.</a>
 						</p>
 						<CardDeck>
+
+							<Card>
+								<CardImg top width="100%" src={company} alt="Card image cap" />
+								<CardBody>
+									<CardTitle>Company Website</CardTitle>
+									<CardSubtitle>React.js, React Router, HTML, CSS, Bootstrap</CardSubtitle>
+									<p className="summary">Summary</p>
+									<CardText>This is a responsive, multipage website for a mock company.</CardText>
+									<a href="https://ethanvernon.github.io/company-demo/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">Check it out</Button></a>
+								</CardBody>
+							</Card>
 
 							<Card>
 								<CardImg top width="100%" src={dice} alt="Card image cap" />
@@ -54,17 +66,6 @@ export class Works extends Component {
 									<p className="summary">Summary</p>
 									<CardText>This single day project takes the roll tables from the DMG and reduces them to the click of a button.</CardText>
 									<a href="https://ethanvernon.github.io/npc_generator/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">Check it out</Button></a>
-								</CardBody>
-							</Card>
-
-							<Card>
-								<CardImg top width="100%" src={party} alt="Card image cap" />
-								<CardBody>
-									<CardTitle>Party Manager</CardTitle>
-									<CardSubtitle>React.js, JavaScript, HTML, CSS</CardSubtitle>
-									<p className="summary">Summary</p>
-									<CardText>My second React app made accessing character and campaign information at the D&D table easier.</CardText>
-									<a href="https://ethanvernon.github.io/manage-party/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">Check it out</Button></a>
 								</CardBody>
 							</Card>
 

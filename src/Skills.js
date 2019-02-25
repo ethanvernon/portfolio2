@@ -12,7 +12,7 @@ export class Skills extends Component {
 					<Col>
 						<img className='code-icon' src={codeIcon}/>
 						<h1>
-							Full-stack Web Developer
+							Front-end Web Developer
 						</h1>
 						<p>
 							I usually make websites with create-react-app and Bootstrap and then upload to GitHub as I make progress.
