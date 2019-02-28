@@ -353,7 +353,8 @@ body {
 
 #cta-wrapper {
   background-color:#0052a4;
-  margin-bottom:0px;
+  margin-bottom:-1px;
+  padding-bottom:10px;
 }
 
 #cta-block {

@@ -32,7 +32,7 @@ export class Works extends Component {
 									<CardSubtitle>React.js, React Router, HTML, CSS, Bootstrap</CardSubtitle>
 									<p className="summary">Summary</p>
 									<CardText>This is a responsive, multipage website for a mock company.</CardText>
-									<a href="https://ethanvernon.github.io/company-demo/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">Check it out</Button></a>
+									<a href="https://ethanvernon.github.io/company-page/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">Check it out</Button></a>
 								</CardBody>
 							</Card>
 
