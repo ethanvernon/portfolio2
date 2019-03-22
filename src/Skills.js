@@ -12,21 +12,19 @@ export class Skills extends Component {
 					<Col>
 						<img className='code-icon' src={codeIcon}/>
 						<h1>
-							Front-end Web Developer
+							Full-stack Web Developer
 						</h1>
-						<p>
-							I usually make websites with create-react-app and Bootstrap and then upload to GitHub as I make progress.
-						</p>
 						<h2>
 							Things I've learned:
 						</h2>
-						<p>JavaScript, HTML, CSS, SQL, PHP, React.js, Node.js, jQuery, SASS</p>
+						<p>JavaScript, HTML, CSS, SQL, PHP, MongoDB, Mongoose.js, Express.js, React.js, Node.js, jQuery, SASS</p>
 						<h2>
 							Tools I use:
 						</h2>
 						<ul>
 							<li>Github</li>
 							<li>React Router</li>
+							<li>Axios</li>
 							<li>NPM</li>
 							<li>Command prompt</li>
 							<li>GIMP</li>

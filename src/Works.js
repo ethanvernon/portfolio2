@@ -9,6 +9,7 @@ import party from './thumbnail-party.png';
 import ab from './thumbnail-ab.png';
 import spell from './thumbnail-spell.png';
 import company from './thumbnail-company.png';
+import mernurl from './thumbnail-mernurl.png';
 
 export class Works extends Component {
   render() {
@@ -24,6 +25,18 @@ export class Works extends Component {
 							I like to learn something new, and then make some projects to test it. Have an idea for me? <a href="http://www.fromgaming.com/contact.html">Let me know.</a>
 						</p>
 						<CardDeck>
+
+							<Card>
+								<CardImg top width="100%" src={mernurl} alt="Card image cap" />
+								<CardBody>
+									<CardTitle>MERN URL Shortener</CardTitle>
+									<CardSubtitle>MongoDB, Mongoose, Express.js, React.js, Node.js, Axios, React Router, HTML, CSS, Bootstrap</CardSubtitle>
+									<p className="summary">Summary</p>
+									<CardText>This responsive URL Shortener is blazing fast since it is made with the MERN stack.</CardText>
+									<a href="https://mernurl.herokuapp.com/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">View demo</Button></a>
+									<a href="https://github.com/ethanvernon/mern-urlshortener" target="_blank" rel="noopener noreferrer"><Button outline color="secondary">View code</Button></a>
+								</CardBody>
+							</Card>
 
 							<Card>
 								<CardImg top width="100%" src={company} alt="Card image cap" />
@@ -63,18 +76,6 @@ export class Works extends Component {
 							</Card>
 
 							<Card>
-								<CardImg top width="100%" src={npc} alt="Card image cap" />
-								<CardBody>
-									<CardTitle>NPC Generator</CardTitle>
-									<CardSubtitle>React.js, JavaScript, JSON, HTML, CSS</CardSubtitle>
-									<p className="summary">Summary</p>
-									<CardText>This single day project takes the roll tables from the DMG and reduces them to the click of a button.</CardText>
-									<a href="https://ethanvernon.github.io/npc_generator/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">View demo</Button></a>
-									<a href="https://github.com/ethanvernon/npc_generator" target="_blank" rel="noopener noreferrer"><Button outline color="secondary">View code</Button></a>
-								</CardBody>
-							</Card>
-
-							<Card>
 								<CardImg top width="100%" src={ab} alt="Card image cap" />
 								<CardBody>
 									<CardTitle>Ab Workout Generator</CardTitle>
@@ -82,7 +83,7 @@ export class Works extends Component {
 									<p className="summary">Summary</p>
 									<CardText>This single page app generates an ab workout of variable length, compelete with audio and visual cues.</CardText>
 									<a href="http://fromgaming.com/ab-app-test-5.html" target="_blank" rel="noopener noreferrer"><Button outline color="primary">View demo</Button></a>
-									<a href="https://github.com/ethanvernon/company-page" target="_blank" rel="noopener noreferrer"><Button outline color="secondary" className='disable'>View code</Button></a>
+									<Button outline color="secondary" className='disable'>View code</Button>
 								</CardBody>
 							</Card>
 
@@ -106,3 +107,19 @@ export class Works extends Component {
     );
   }
 }
+
+/*
+
+
+							<Card>
+								<CardImg top width="100%" src={npc} alt="Card image cap" />
+								<CardBody>
+									<CardTitle>NPC Generator</CardTitle>
+									<CardSubtitle>React.js, JavaScript, JSON, HTML, CSS</CardSubtitle>
+									<p className="summary">Summary</p>
+									<CardText>This single day project takes the roll tables from the DMG and reduces them to the click of a button.</CardText>
+									<a href="https://ethanvernon.github.io/npc_generator/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">View demo</Button></a>
+									<a href="https://github.com/ethanvernon/npc_generator" target="_blank" rel="noopener noreferrer"><Button outline color="secondary">View code</Button></a>
+								</CardBody>
+							</Card>
+*/

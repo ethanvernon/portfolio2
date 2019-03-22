@@ -8,7 +8,7 @@ export class Title extends Component {
     return (
 		<div id='title'>
 			<Jumbotron>
-				<h1 className="display-5">Front-end Web Developer</h1>
+				<h1 className="display-5">Full-stack Web Developer</h1>
 				<p className="lead">I'm a fast-learning web developer who loves creating things with code.</p>
 				<img className='avatar' src={myAvatar}/>
 			</Jumbotron>
