@@ -72,7 +72,7 @@ export class Bottom extends Component {
 
 				<img className='my-logo' src={logoInvert}/>
 
-				<h1>Living the life I want in the future, today.</h1>
+				<h1>Actively building the life I want.</h1>
 
 				<div className='my-links'>
 					

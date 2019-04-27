@@ -13,7 +13,7 @@ export class Testimonials extends Component {
 							Testimonials
 						</h1>
 						<p className='description'>
-							People have said some nice things about me...
+							From Texas to Colorado, from China to Las Vegas and back again, I have met so many amazing people from all different places and cultures. I try to always be a pleasure to work both with and alongside. Here are some nice things people have said about me.
 						</p>
 						<p className="quote">
 							"I had worked with Ethan in my position as head of English department in Xili Primary School for one year. I found him to be consistenty responsible and honest, working with dedication as a teacher. He had a wonderful rapport with both colleagues and students."

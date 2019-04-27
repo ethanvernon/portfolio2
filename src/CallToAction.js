@@ -18,7 +18,7 @@ export class CallToAction extends Component {
 						</Col>
 						<Col md='4'>
 							<p>
-								Looking for a new teammate? Let's chat. You'll find me agreeable.
+								Looking for a new addition to your team? Let's get in touch.
 							</p>
 						</Col>
 						<Col md='4'>

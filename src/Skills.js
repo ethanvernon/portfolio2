@@ -12,27 +12,24 @@ export class Skills extends Component {
 					<Col>
 						<img className='code-icon' src={codeIcon}/>
 						<h1>
-							Full-stack Web Developer
+							Full-stack JavaScript Developer
 						</h1>
 						<h2>
 							Things I've learned:
 						</h2>
-						<p>JavaScript, HTML, CSS, SQL, PHP, MongoDB, Mongoose.js, Express.js, React.js, Node.js, jQuery, SASS</p>
+						<p>JavaScript, HTML, CSS, React.js, MongoDB, Mongoose, Express, Node.js, jQuery, PHP, SQL, SASS</p>
 						<h2>
 							Tools I use:
 						</h2>
 						<ul>
 							<li>Github</li>
+							<li>Redux</li>
 							<li>React Router</li>
 							<li>Axios</li>
-							<li>NPM</li>
+							<li>npm</li>
 							<li>Command prompt</li>
-							<li>GIMP</li>
-							<li>Github Pages</li>
 							<li>Sublime Text</li>
 							<li>Bootstrap</li>
-							<li>Codepen</li>
-							<li>Method Draw</li>
 							<li>Chrome Developer Tools</li>
 						</ul>
 					</Col>
