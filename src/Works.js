@@ -9,6 +9,7 @@ import ab from './abworkout-mockup.png';
 import spell from './spellchooser-markup.png';
 import company from './company-markup.png';
 import mernurl from './urlshortner-markup.png';
+import markdown from './markdown-markup.png';
 
 export class Works extends Component {
   render() {
@@ -26,7 +27,19 @@ export class Works extends Component {
 						<CardDeck>
 
 							<Card>
-								<CardImg top width="100%" src={exerciselog} alt="Card image cap" />
+								<a href="https://redux-markdown.herokuapp.com/" target="_blank" rel="noopener noreferrer"><CardImg top width="100%" src={markdown} alt="Card image cap" /></a>
+								<CardBody>
+									<CardTitle>Full-stack Markdown Previewer</CardTitle>
+									<CardSubtitle>MongoDB, Mongoose, Express.js, React.js, Node.js, Axios, Redux, HTML, CSS, Bootstrap</CardSubtitle>
+									<p className="summary">Summary</p>
+									<CardText>I made this markdown previewer to try and flex my Redux muscle, although Redux is overkill for this app.</CardText>
+									<a href="https://redux-markdown.herokuapp.com/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">View demo</Button></a>
+									<a href="https://github.com/ethanvernon/markdown-previewer" target="_blank" rel="noopener noreferrer"><Button outline color="secondary">View code</Button></a>
+								</CardBody>
+							</Card>
+
+							<Card>
+								<a href="https://mernlog.herokuapp.com/" target="_blank" rel="noopener noreferrer"><CardImg top width="100%" src={exerciselog} alt="Card image cap" /></a>
 								<CardBody>
 									<CardTitle>Full-stack Exercise Logger</CardTitle>
 									<CardSubtitle>MongoDB, Mongoose, Express.js, React.js, Node.js, Axios, React Router, HTML, CSS, Bootstrap</CardSubtitle>
@@ -38,7 +51,7 @@ export class Works extends Component {
 							</Card>
 
 							<Card>
-								<CardImg top width="100%" src={mernurl} alt="Card image cap" />
+								<a href="https://mernurl.herokuapp.com/" target="_blank" rel="noopener noreferrer"><CardImg top width="100%" src={mernurl} alt="Card image cap" /></a>
 								<CardBody>
 									<CardTitle>MERN URL Shortener</CardTitle>
 									<CardSubtitle>MongoDB, Mongoose, Express.js, React.js, Node.js, Axios, React Router, HTML, CSS, Bootstrap</CardSubtitle>
@@ -50,7 +63,7 @@ export class Works extends Component {
 							</Card>
 
 							<Card>
-								<CardImg top width="100%" src={company} alt="Card image cap" />
+								<a href="https://ethanvernon.github.io/company-page/" target="_blank" rel="noopener noreferrer"><CardImg top width="100%" src={company} alt="Card image cap" /></a>
 								<CardBody>
 									<CardTitle>Company Website</CardTitle>
 									<CardSubtitle>React.js, React Router, HTML, CSS, Bootstrap</CardSubtitle>
@@ -62,7 +75,7 @@ export class Works extends Component {
 							</Card>
 
 							<Card>
-								<CardImg top width="100%" src={dice} alt="Card image cap" />
+								<a href="https://ethanvernon.github.io/story_dice/" target="_blank" rel="noopener noreferrer"><CardImg top width="100%" src={dice} alt="Card image cap" /></a>
 								<CardBody>
 									<CardTitle>Story Dice</CardTitle>
 									<CardSubtitle>React.js, JavaScript, GIMP, HTML, CSS</CardSubtitle>
@@ -73,21 +86,9 @@ export class Works extends Component {
 
 								</CardBody>
 							</Card>
-							
-							<Card>
-								<CardImg top width="100%" src={pomo} alt="Card image cap" />
-								<CardBody>
-									<CardTitle>Pomodoro Clock</CardTitle>
-									<CardSubtitle>React.js, JavaScript, HTML, CSS, Bootstrap</CardSubtitle>
-									<p className="summary">Summary</p>
-									<CardText>I originally made this project with jQuery, but I recently updated it to use React and DOM/ES6 operations.</CardText>
-									<a href="https://ethanvernon.github.io/pomodoro_clock/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">View demo</Button></a>
-									<a href="https://github.com/ethanvernon/pomodoro_clock" target="_blank" rel="noopener noreferrer"><Button outline color="secondary">View code</Button></a>
-								</CardBody>
-							</Card>
 
 							<Card>
-								<CardImg top width="100%" src={ab} alt="Card image cap" />
+								<a href="http://fromgaming.com/ab-app-test-5.html" target="_blank" rel="noopener noreferrer"><CardImg top width="100%" src={ab} alt="Card image cap" /></a>
 								<CardBody>
 									<CardTitle>Ab Workout Generator</CardTitle>
 									<CardSubtitle>JavaScript, HTML, CSS, PHP, SQL</CardSubtitle>
@@ -129,6 +130,18 @@ export class Works extends Component {
 									<CardText>This single day project takes the roll tables from the DMG and reduces them to the click of a button.</CardText>
 									<a href="https://ethanvernon.github.io/npc_generator/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">View demo</Button></a>
 									<a href="https://github.com/ethanvernon/npc_generator" target="_blank" rel="noopener noreferrer"><Button outline color="secondary">View code</Button></a>
+								</CardBody>
+							</Card>
+							
+							<Card>
+								<CardImg top width="100%" src={pomo} alt="Card image cap" />
+								<CardBody>
+									<CardTitle>Pomodoro Clock</CardTitle>
+									<CardSubtitle>React.js, JavaScript, HTML, CSS, Bootstrap</CardSubtitle>
+									<p className="summary">Summary</p>
+									<CardText>I originally made this project with jQuery, but I recently updated it to use React and DOM/ES6 operations.</CardText>
+									<a href="https://ethanvernon.github.io/pomodoro_clock/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">View demo</Button></a>
+									<a href="https://github.com/ethanvernon/pomodoro_clock" target="_blank" rel="noopener noreferrer"><Button outline color="secondary">View code</Button></a>
 								</CardBody>
 							</Card>
 */
