@@ -22,6 +22,7 @@ export class Skills extends Component {
 							Tools I use:
 						</h2>
 						<ul>
+							<li>Ant Design</li>
 							<li>Github</li>
 							<li>Redux</li>
 							<li>React Router</li>

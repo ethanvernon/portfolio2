@@ -12,9 +12,9 @@ export class Profile extends Component {
 				Hello, I'm Ethan. I'd like to join your team.
 			</h1>
 			<p>
-				I'm a full-stack JavaScript developer that has been around the world. 
-				I taught myself how to code, and I'm either building something or learning something new every day.
-				I learn fast, I'm always positive, and I'm easy to coach. 
+				I'm a full-stack JavaScript developer that has spent the last couple years in Shenzhen, China.
+				I enjoy studying new technologies and using them in personal projects.
+				Take a look at my <a href="#skills">skills</a>, some of my most recent <a href="#works">projects</a>, and read some of my managers' <a href="#testimonials">testimonials</a> below.
 			</p>
 			<a href={resume} target='__blank'>
 				<Button outline color="primary">

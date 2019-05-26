@@ -13,10 +13,19 @@ export class Testimonials extends Component {
 							Testimonials
 						</h1>
 						<p className='description'>
-							From Texas to Colorado, from China to Las Vegas and back again, I have met so many amazing people from all different places and cultures. I try to always be a pleasure to work both with and alongside. Here are some nice things people have said about me.
+							From Texas to Colorado, from China to Las Vegas and back again, I have met so many amazing people from all different places and cultures. Here are some nice things people have said about me.
 						</p>
 						<p className="quote">
-							"I had worked with Ethan in my position as head of English department in Xili Primary School for one year. I found him to be consistenty responsible and honest, working with dedication as a teacher. He had a wonderful rapport with both colleagues and students."
+							"He loved this job and was very patient and enthusiastic. He treated each task with strong enthusiasm and great effort."
+						</p>
+						<h2>
+							Jasmine Zhang
+						</h2>
+						<h3>
+						Operation Exectuive of Innovation Education, Shenzhen Seaskyland Technology
+						</h3>	
+						<p className="quote">
+							"I found him to be consistenty responsible and honest, working with dedication as a teacher. He had a wonderful rapport with both colleagues and students."
 						</p>
 						<h2>
 							Christina Zhang

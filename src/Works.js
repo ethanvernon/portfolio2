@@ -10,6 +10,7 @@ import spell from './spellchooser-markup.png';
 import company from './company-markup.png';
 import mernurl from './urlshortner-markup.png';
 import markdown from './markdown-markup.png';
+import meteor from './meteor-markup.png';
 
 export class Works extends Component {
   render() {
@@ -25,6 +26,18 @@ export class Works extends Component {
 							I like to learn something new, and then make some projects to test it. I have completed 25+ projects in the last year, and nowadays everything I make is responsive and uses modern, in-demand technologies. Below are just some of my most recent works. Want to see more? <a href="http://www.fromgaming.com/contact.html">Get in touch.</a>
 						</p>
 						<CardDeck>
+
+							<Card>
+								<a href="https://ethanvernon.github.io/mern-meteorite-explorer/" target="_blank" rel="noopener noreferrer"><CardImg top width="100%" src={meteor} alt="Card image cap" /></a>
+								<CardBody>
+									<CardTitle>Meteorite Explorer App</CardTitle>
+									<CardSubtitle>React.js, Axios, SASS, Bootstrap, Ant Design</CardSubtitle>
+									<p className="summary">Summary</p>
+									<CardText>This project queries Nasa's Meteorite Landing dataset via a Socrata API.</CardText>
+									<a href="https://ethanvernon.github.io/mern-meteorite-explorer/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">View demo</Button></a>
+									<a href="https://github.com/ethanvernon/mern-meteorite-explorer" target="_blank" rel="noopener noreferrer"><Button outline color="secondary">View code</Button></a>
+								</CardBody>
+							</Card>
 
 							<Card>
 								<a href="https://redux-markdown.herokuapp.com/" target="_blank" rel="noopener noreferrer"><CardImg top width="100%" src={markdown} alt="Card image cap" /></a>
@@ -75,19 +88,6 @@ export class Works extends Component {
 							</Card>
 
 							<Card>
-								<a href="https://ethanvernon.github.io/story_dice/" target="_blank" rel="noopener noreferrer"><CardImg top width="100%" src={dice} alt="Card image cap" /></a>
-								<CardBody>
-									<CardTitle>Story Dice</CardTitle>
-									<CardSubtitle>React.js, JavaScript, GIMP, HTML, CSS</CardSubtitle>
-									<p className="summary">Summary</p>
-									<CardText>This is a passion project I made to help me even further develop my creativity.</CardText>
-									<a href="https://ethanvernon.github.io/story_dice/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">View demo</Button></a>
-									<a href="https://github.com/ethanvernon/story_dice" target="_blank" rel="noopener noreferrer"><Button outline color="secondary">View code</Button></a>
-
-								</CardBody>
-							</Card>
-
-							<Card>
 								<a href="http://fromgaming.com/ab-app-test-5.html" target="_blank" rel="noopener noreferrer"><CardImg top width="100%" src={ab} alt="Card image cap" /></a>
 								<CardBody>
 									<CardTitle>Ab Workout Generator</CardTitle>
@@ -109,6 +109,20 @@ export class Works extends Component {
 }
 
 /*
+
+							<Card>
+								<a href="https://ethanvernon.github.io/story_dice/" target="_blank" rel="noopener noreferrer"><CardImg top width="100%" src={dice} alt="Card image cap" /></a>
+								<CardBody>
+									<CardTitle>Story Dice</CardTitle>
+									<CardSubtitle>React.js, JavaScript, GIMP, HTML, CSS</CardSubtitle>
+									<p className="summary">Summary</p>
+									<CardText>This is a passion project I made to help me even further develop my creativity.</CardText>
+									<a href="https://ethanvernon.github.io/story_dice/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">View demo</Button></a>
+									<a href="https://github.com/ethanvernon/story_dice" target="_blank" rel="noopener noreferrer"><Button outline color="secondary">View code</Button></a>
+
+								</CardBody>
+							</Card>
+
 							<Card>
 								<CardImg top width="100%" src={spell} alt="Card image cap" />
 								<CardBody>

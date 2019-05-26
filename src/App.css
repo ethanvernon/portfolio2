@@ -111,6 +111,10 @@ body {
   text-align:center;
 }
 
+#profile a {
+  color:#ffb30f ;
+}
+
 /*too big and not enough spacing*/
 #profile h1 {
   font-size:25px;
