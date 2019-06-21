@@ -628,8 +628,8 @@ $base-font: 18px;
   }  
 
   #title p {
-    font-size:$base-font*2;
-    line-height:$base-font*3;
+    font-size:$base-font*1.75;
+    line-height:$base-font*2.75;
     max-width:1000px
   }
 
@@ -740,13 +740,27 @@ $base-font: 18px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------Media queries <850px------------------------------------------*/
+/*---------------------------------------------------------------Media queries <766px------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
+@media only screen and (max-width: 766px) {
+  #call-to-action {
+    margin-bottom: -124px;
+  }
 
+  #call-to-action .container {
+    height:auto;
+    padding: $base-font 15px;
+  }
 
+  #call-to-action .col-md-4 {
+    margin-bottom:$base-font;
+  }
 
-
+  #bottom {
+    padding-top:$base-font*3+124px;
+  }
+}
 
 
 
