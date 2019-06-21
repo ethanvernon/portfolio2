@@ -33,10 +33,10 @@ export class Works extends Component {
 									<a href="https://ethanvernon.github.io/mern-meteorite-explorer/" target="_blank" rel="noopener noreferrer"><CardImg top width="100%" src={meteor} alt="Card image cap" /></a>
 								</div>
 								<CardBody>
-									<CardTitle>Meteorite Explorer App</CardTitle>
-									<CardText>React.js, Axios, SASS, Bootstrap, Ant Design</CardText>
+									<CardTitle className='card-app-name'>Meteorite Explorer App</CardTitle>
+									<CardText className='card-tech'>React.js, Axios, SASS, Bootstrap, Ant Design</CardText>
 									<p className="summary">Summary</p>
-									<CardText>This was pre-work for Chingu Voyage 9! The task was to query NASA's meteorite landing dataset. Firsts in this project included: I had to work around using Socrata API (when will APIs be standardized?!), implement some form of pagination (I used Ant Design), and I added a little animation flare.</CardText>
+									<CardText className='card-summary'>This project queries NASA's meteorite landing dataset. Firsts in this project included: learning how to use Socrata API, implement some form of pagination, and adding little animation.</CardText>
 									<a href="https://ethanvernon.github.io/mern-meteorite-explorer/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">View demo</Button></a>
 									<a href="https://github.com/ethanvernon/mern-meteorite-explorer" target="_blank" rel="noopener noreferrer"><Button outline color="secondary">View code</Button></a>
 								</CardBody>
@@ -47,10 +47,10 @@ export class Works extends Component {
 									<a href="https://redux-markdown.herokuapp.com/" target="_blank" rel="noopener noreferrer"><CardImg top width="100%" src={markdown} alt="Card image cap" /></a>
 								</div>
 								<CardBody>
-									<CardTitle>Full-stack Markdown Previewer</CardTitle>
-									<CardText>MongoDB, Mongoose, Express.js, React.js, Node.js, Axios, Redux, HTML, CSS, Bootstrap</CardText>
+									<CardTitle className='card-app-name'>Full-stack Markdown Previewer</CardTitle>
+									<CardText className='card-tech'>MongoDB, Mongoose, Express.js, React.js, Node.js, Axios, Redux, HTML, CSS, Bootstrap</CardText>
 									<p className="summary">Summary</p>
-									<CardText>This app idea came from FreeCodeCamp's APIs and Microservices track. By this point, I was already pretty familiar with making full-stack apps. So I decided to learn Redux and try using it in this project. Success!</CardText>
+									<CardText className='card-summary'>This app idea came from FreeCodeCamp's APIs and Microservices track. By this point, I was already pretty familiar with making full-stack apps. So I decided to learn Redux and try using it in this project. Success!</CardText>
 									<a href="https://redux-markdown.herokuapp.com/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">View demo</Button></a>
 									<a href="https://github.com/ethanvernon/markdown-previewer" target="_blank" rel="noopener noreferrer"><Button outline color="secondary">View code</Button></a>
 								</CardBody>
@@ -61,10 +61,10 @@ export class Works extends Component {
 									<a href="https://mernlog.herokuapp.com/" target="_blank" rel="noopener noreferrer"><CardImg top width="100%" src={exerciselog} alt="Card image cap" /></a>
 								</div>
 								<CardBody>
-									<CardTitle>Full-stack Exercise Logger</CardTitle>
-									<CardText>MongoDB, Mongoose, Express.js, React.js, Node.js, Axios, React Router, HTML, CSS, Bootstrap</CardText>
+									<CardTitle className='card-app-name'>Full-stack Exercise Logger</CardTitle>
+									<CardText className='card-tech'>MongoDB, Mongoose, Express.js, React.js, Node.js, Axios, React Router, HTML, CSS, Bootstrap</CardText>
 									<p className="summary">Summary</p>
-									<CardText>I made this exercise logger as additional practice making full-stack apps with JavaScript's MERN stack.</CardText>
+									<CardText className='card-summary'>I made this exercise logger as additional practice making full-stack apps with JavaScript's MERN stack.</CardText>
 									<a href="https://mernlog.herokuapp.com/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">View demo</Button></a>
 									<a href="https://github.com/ethanvernon/mern-exerciseapp" target="_blank" rel="noopener noreferrer"><Button outline color="secondary">View code</Button></a>
 								</CardBody>
@@ -75,10 +75,10 @@ export class Works extends Component {
 									<a href="https://mernurl.herokuapp.com/" target="_blank" rel="noopener noreferrer"><CardImg top width="100%" src={mernurl} alt="Card image cap" /></a>
 								</div>
 								<CardBody>
-									<CardTitle>MERN URL Shortener</CardTitle>
-									<CardText>MongoDB, Mongoose, Express.js, React.js, Node.js, Axios, React Router, HTML, CSS, Bootstrap</CardText>
+									<CardTitle className='card-app-name'>MERN URL Shortener</CardTitle>
+									<CardText className='card-tech'>MongoDB, Mongoose, Express.js, React.js, Node.js, Axios, React Router, HTML, CSS, Bootstrap</CardText>
 									<p className="summary">Summary</p>
-									<CardText>This is one of my first efforts in making a full-stack web app using the MERN stack. It has since shortened 60+ URLs.</CardText>
+									<CardText className='card-summary'>This is one of my first efforts in making a full-stack web app using the MERN stack. It has since shortened 60+ URLs.</CardText>
 									<a href="https://mernurl.herokuapp.com/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">View demo</Button></a>
 									<a href="https://github.com/ethanvernon/mern-urlshortener" target="_blank" rel="noopener noreferrer"><Button outline color="secondary">View code</Button></a>
 								</CardBody>
@@ -89,10 +89,10 @@ export class Works extends Component {
 									<a href="https://ethanvernon.github.io/company-page/" target="_blank" rel="noopener noreferrer"><CardImg top width="100%" src={company} alt="Card image cap" /></a>
 								</div>
 								<CardBody>
-									<CardTitle>Company Website</CardTitle>
-									<CardText>React.js, React Router, HTML, CSS, Bootstrap</CardText>
+									<CardTitle className='card-app-name'>Company Website</CardTitle>
+									<CardText className='card-tech'>React.js, React Router, HTML, CSS, Bootstrap</CardText>
 									<p className="summary">Summary</p>
-									<CardText>I made this responsive website as a practice in developing a website from a mockup and using React Router.</CardText>
+									<CardText className='card-summary'>I made this responsive website as a practice in developing a website from a mockup and using React Router.</CardText>
 									<a href="https://ethanvernon.github.io/company-page/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">View demo</Button></a>
 									<a href="https://github.com/ethanvernon/company-page" target="_blank" rel="noopener noreferrer"><Button outline color="secondary">View code</Button></a>
 								</CardBody>
@@ -103,10 +103,10 @@ export class Works extends Component {
 									<a href="http://fromgaming.com/ab-app-test-5.html" target="_blank" rel="noopener noreferrer"><CardImg top width="100%" src={ab} alt="Card image cap" /></a>
 								</div>
 								<CardBody>
-									<CardTitle>Ab Workout Generator</CardTitle>
-									<CardText>JavaScript, HTML, CSS, PHP, SQL</CardText>
+									<CardTitle className='card-app-name'>Ab Workout Generator</CardTitle>
+									<CardText className='card-tech'>JavaScript, HTML, CSS, PHP, SQL</CardText>
 									<p className="summary">Summary</p>
-									<CardText>I made this project when I was learning PHP and SQL. Change into your gym clothes and give it a try.</CardText>
+									<CardText className='card-summary'>I made this project when I was learning PHP and SQL. Change into your gym clothes and give it a try.</CardText>
 									<a href="http://fromgaming.com/ab-app-test-5.html" target="_blank" rel="noopener noreferrer"><Button outline color="primary">View demo</Button></a>
 									<Button outline color="secondary" className='disable'>View code</Button>
 								</CardBody>

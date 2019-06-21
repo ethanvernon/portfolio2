@@ -245,7 +245,7 @@ $base-font: 18px;
 /*---------------------------------------------------------------Works---------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
-/*align font, give space, max width*/
+/*container*/
 #works {
   text-align:center;
   max-width:1000px;
@@ -255,13 +255,14 @@ $base-font: 18px;
 /*"My Projects" header*/
 #works h1 {
   font-size:$base-font*2;
+  line-height:$base-font*3;
   letter-spacing:-.5px;
   font-weight:bold;
-  margin-bottom:$base-font*2;
+  margin:0px $base-font*2 5px;
 }
 
 /*more space, spacing, size*/
-#works .works-description {
+.works-description {
   font-size:$base-font;
   line-height:$base-font*2;
   margin-bottom:$base-font*2; 
@@ -272,12 +273,13 @@ $base-font: 18px;
   margin-right: auto;
 }
 
+/*contains all cards*/
 #works .card-deck {
   margin-right:0px;
   margin-left:0px;
 }
 
-/*cards are too big for large screens, border changes*/
+/*each individual card*/
 #works .card {
   max-width:500px;
   margin-bottom:$base-font*2;
@@ -287,12 +289,12 @@ $base-font: 18px;
   box-shadow: 0px 15px 10px -10px #888888;
 }
 
-
-/*max image size is image size*/
+/*holds each image*/
 #works .card-img-container {
+  width:95%;
   max-width:420px;
   max-height:300px;
-  margin:$base-font 5px;
+  margin:$base-font auto;
   border-radius:10px;
   border:2px solid #cccccc;
   box-shadow: 0px 3px 2px -2px #888888;
@@ -307,34 +309,50 @@ $base-font: 18px;
   transform: scale(1.5) rotate(-17deg);
 }
 
-/*inline isn't working some reason so sets width of image when container is small like on mobile*/
-#works .card-img-top {
-  width:95%;
+/*everything below the image*/
+#works .card-body {
+  padding: 0px 1.25rem;
+  margin-bottom:$base-font;
 }
 
-
-/*sub-header size and color*/
-#works .card-title {
+/*name of project*/
+.card-app-name {
   font-size:$base-font*1.5;
   color: $my-blue;
   font-weight:500;
   margin-bottom:$base-font;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
 }
 
-#works .card-text {
+/*technology list, no specific height*/
+.card-tech {
   font-size:$base-font;
   margin: $base-font 0px;
-  line-height:$base-font*1.5;
+  line-height:$base-font*2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/*font prefs, space*/
+/*the actual summary subheader*/
 #works .summary {  
   font-size:$base-font;
-  line-height:$base-font*2;
   color: $my-blue;
   font-weight:500;
   margin-bottom:$base-font;
 }
+
+/*summary of project, no specific height*/
+#works .card-summary {
+  font-size:$base-font;
+  margin-bottom: $base-font;
+  line-height:$base-font*2;
+}
+
 
 /*change primary blue to my website blue, other preferences*/
 #works .btn-outline-primary {
@@ -577,16 +595,25 @@ $base-font: 18px;
   }
 
   /*cards need uniformity when displayed adjacent*/
-  #works .card {
-    height:850px;
+  /*fits 2 lines*/
+  #works .card-app-name {
+    height:80px;
+  }
+  /*fits 3 lines*/
+  #works .card-tech {
+    height:108px;
+  }
+  /*fits 7 lines*/
+  #works .card-summary {
+    height:252px;
   }
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------Media queries >1000px-----------------------------------------*/
+/*---------------------------------------------------------------Media queries >992px-----------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 992px) {
 
   /*bigger for large screen*/
   #title h1 {
@@ -607,8 +634,22 @@ $base-font: 18px;
   }
 
   #profile p {
-    font-size:$base-font*1.5;
-    line-height:$base-font*2.5;
+    font-size:$base-font*1.25;
+    line-height:$base-font*2.25;
+  }
+
+  /*cards need uniformity when displayed adjacent*/
+  /*fits 1 line*/
+  #works .card-app-name {
+    height:40px;
+  }
+  /*fits 3 lines*/
+  #works .card-tech {
+    height:108px;
+  }
+  /*fits 5 lines*/
+  #works .card-summary {
+    height:180px;
   }
 }
 
@@ -690,7 +731,6 @@ $base-font: 18px;
   #works .card {
     margin-right:auto;
     margin-left:auto;
-    margin-bottom:25px;
   }
 }
 
