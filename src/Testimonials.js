@@ -13,7 +13,7 @@ export class Testimonials extends Component {
 							Testimonials
 						</h1>
 						<p className='description'>
-							I've lived in Texas, Colorado, Las Vegas, and China. Here are some nice things people from all over have said about me.
+							I've lived in Texas, Colorado, Las Vegas, and China. Here are some nice things people from all over have said about me:
 						</p>
 						<p className="quote">
 							"He loved this job and was very patient and enthusiastic. He treated each task with strong enthusiasm and great effort."
