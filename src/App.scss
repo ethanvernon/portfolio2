@@ -249,7 +249,7 @@ $base-font: 18px;
 #works {
   text-align:center;
   max-width:1000px;
-  margin: $base-font*3 auto;
+  margin: $base-font*3 0px auto;
 }
 
 /*"My Projects" header*/
@@ -408,47 +408,52 @@ $base-font: 18px;
 /*testimonials*/
 #testimonials {
   text-align: center;
-  margin-bottom:130px;
+  margin-top:$base-font*2;
 }
 
 /*Testimonials header*/
-#testimonials h1 {
-  font-size:24px;
+#testimonials .testimonials-header {
+  font-size:$base-font*2;
+  line-height:$base-font*2.5;
   font-weight:bold;
-  margin-bottom:30px;
-  margin-top:5px;
+  margin-bottom:$base-font*2;
 }
 
 #testimonials .description {
-  font-size:18px;
-  margin-bottom:40px;
+  font-size:$base-font;
+  line-height:$base-font*1.5;
+  margin-bottom:$base-font*2;
   width:90%;
-  max-width:900px;
+  max-width:1000px;
   margin-left:auto;
   margin-right:auto;
 }
 
-#testimonials p {
-  font-size:18px;
-  line-height:27px;
-  margin-bottom:30px;
-}
-
 #testimonials .quote {
+  font-size:$base-font;
+  line-height:$base-font*1.5;
+  margin-bottom:$base-font;
   font-family: 'Handlee', cursive;
   font-weight: 600;
 }
 
-#testimonials h2 {
-  font-size:20px;
+#testimonials .quote-source {
+  font-size:$base-font;
+  line-height:$base-font*1.5;
   font-weight: 800;
   color:$my-blue;
+  margin-bottom:$base-font;
 }
 
-#testimonials h3 {
-  font-size:16px;
+#testimonials .quote-title {
+  font-size:$base-font*.75;
+  line-height:$base-font;
   font-weight:300;
-  margin-bottom:60px;
+  margin-bottom:$base-font*2;
+}
+
+.testimonials-container {
+  margin-bottom:$base-font*5;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------*/

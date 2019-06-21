@@ -36,7 +36,7 @@ export class Works extends Component {
 									<CardTitle className='card-app-name'>Meteorite Explorer App</CardTitle>
 									<CardText className='card-tech'>React.js, Axios, SASS, Bootstrap, Ant Design</CardText>
 									<p className="summary">Summary</p>
-									<CardText className='card-summary'>This project queries NASA's meteorite landing dataset. Firsts in this project included: learning how to use Socrata API, implement some form of pagination, and adding little animation.</CardText>
+									<CardText className='card-summary'>This project queries NASA's meteorite landing dataset. Firsts in this project included: learning how to use Socrata API, implement some form of pagination, and adding a little animation.</CardText>
 									<a href="https://ethanvernon.github.io/mern-meteorite-explorer/" target="_blank" rel="noopener noreferrer"><Button outline color="primary">View demo</Button></a>
 									<a href="https://github.com/ethanvernon/mern-meteorite-explorer" target="_blank" rel="noopener noreferrer"><Button outline color="secondary">View code</Button></a>
 								</CardBody>
