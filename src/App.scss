@@ -28,9 +28,10 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.color-scheme {
-  color: #0052a4;
-}
+$my-blue: #0052a4;
+$my-orange: #ffb30f;
+$my-black: #222327;
+$base-font: 18px;
 
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------Navigation----------------------------------------------------*/
@@ -38,10 +39,10 @@ body {
 
 /*change primary blue to my website blue, other preferences*/
 .nav-bar-pref .btn-outline-primary {
-  color: #0052a4 !important;
-  border-color: #0052a4 !important;
+  color: $my-blue !important;
+  border-color: $my-blue !important;
   border-width:2px !important;
-  font-size:18px !important;
+  font-size:$base-font !important;
   border-radius:20px !important;
   font-weight:500 !important;
 }
@@ -49,19 +50,33 @@ body {
 /*change primary blue to my website blue*/
 .nav-bar-pref .btn-outline-primary:hover {
   color: white !important;
-  background-color: #0052a4 !important;
+  background-color: $my-blue !important;
 }
 
 /*the navbar stretches too wide on wide screens*/
 .nav-bar-pref {
-  max-width:1000px;
+  background-color:#fff;
   margin: auto;
+  height:75px;
+  width:100vw;
+  position:fixed;
+  top:0;
+  z-index:100;
+  padding-bottom:5px;
+}
+
+.navbar {
+  margin:auto;
+  max-width:1000px;
+  padding: 0rem 1.5rem !important;
+  height:75px;
+  padding-bottom:5px
 }
 
 /*logo is slightly off-centered vertically, this fixes it, and width*/
 .my-logo {
-  width:160px;
-  padding-top:18px;
+  width:140px;
+  padding-top:14px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------*/
@@ -69,22 +84,27 @@ body {
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
 /*don't want the gray background, and text left-align by default*/
-.jumbotron {
+.title-container {
   background-color:white !important;
   text-align:center;
-  padding-top:10px !important;
+  padding:0px 10px;
 }
 
 #title h1 {
-  font-size:36px;
-  font-weight:bold;  
-  color: #293347;
+  font-size:$base-font*2.5;
+  line-height:$base-font*3;
+  font-weight:bold;
+  color: $my-black;
+  letter-spacing:-1px;
 }
 
 #title p {  
-  color: #293347;
-  font-size:24px;
-  line-height:50px;
+  color: $my-black;
+  font-size:$base-font*1.5;
+  line-height:$base-font*2.5;
+  margin-top:$base-font;
+  font-weight:400;
+  letter-spacing:-1px;
 }
 
 /*avatar is smaller, needs a littls space*/
@@ -95,7 +115,8 @@ body {
 
 /*title should be taller, and content centered*/
 #title {
-  height:600px;
+  height:100vh;
+  padding-top:75px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -108,41 +129,47 @@ body {
 
 /*profile switches to blue background*/
 #profile {
-  background-color: #0052a4;
+  background-color: $my-blue;
   color:white;
-  padding:80px 20px;
-  padding-bottom:180px;
+  padding:$base-font*3 $base-font;
   text-align:center;
 }
 
+#profile .container, #profile .col, #profile .row {
+  margin:0px auto;
+  padding:0px;  
+  max-width:1000px;
+}
+
 #profile a {
-  color:#ffb30f ;
+  color:$my-orange;
+}
+
+#profile p a {
+  font-weight:500;
 }
 
 /*too big and not enough spacing*/
 #profile h1 {
-  font-size:25px;
-  margin-bottom:40px;
+  font-size:$base-font*2;
+  line-height:$base-font*3;
+  margin-bottom:$base-font;
   font-weight:800;
-}
-
-/*too wide on large screens*/
-#profile .container {
-  max-width:720px;
 }
 
 /*too small*/
 #profile p {
-  font-size:20px;
-  line-height:30px;
-  margin-bottom:45px;
+  font-size:$base-font*1;
+  line-height:$base-font*2;
   font-weight:300;
+  margin-bottom:$base-font;
+  letter-spacing:-.5px;
 }
 
 /*change primary blue to my website blue, other preferences*/
 #profile .btn-outline-primary {
-  color: #ffb30f !important;
-  border-color: #ffb30f !important;
+  color: $my-orange !important;
+  border-color: $my-orange !important;
   border-width:2px !important;
   font-size:18px !important;
   border-radius:18px !important;
@@ -152,8 +179,8 @@ body {
 
 /*change primary blue to my website blue*/
 #profile .btn-outline-primary:hover {
-  color: #0052a4 !important;
-  background-color: #ffb30f !important;
+  color: $my-blue !important;
+  background-color: $my-orange !important;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------*/
@@ -163,52 +190,56 @@ body {
 /*skills box will lay over profile background*/
 /*give border and box shadow on the bottom*/
 #skills {
-  margin-top:-120px;
+  margin:-1.5*$base-font auto auto;
+  width:95%;
+  max-width:1000px;
   border-radius:10px;
   background-color:white;
-  margin-left:20px;
-  margin-right:20px;  
   text-align: center;
-  border: .5px solid #0052a4;
+  border: 2px solid $my-blue;
   box-shadow: 0px 15px 10px -10px #888888;
-  padding-bottom:5px;
 }
 
 /*size and center align the code icon*/
 #skills .code-icon {
-  height:100px;
+  height:5*$base-font;
   display:block;
-  margin:40px auto;
+  margin:2*$base-font auto;
 }
 
 
 /*too big and not enough spacing*/
 #skills h1 {
-  font-size:25px;
-  margin-bottom:30px;
+  font-size:1.5*$base-font;
+  line-height:2*$base-font;
+  margin-bottom:1*$base-font;
   font-weight: bold;
+}
+
+#skills h2 {
+  font-size:1*$base-font;
+  line-height:2*$base-font;
+  margin-bottom:1*$base-font;
+  color: $my-blue;
 }
 
 /*paragraph font too small*/
 #skills p {
-  font-size:18px;
-  line-height:27px;
-  margin-bottom:50px;
+  font-size:1*$base-font;
+  line-height:2*$base-font;
+  margin-bottom:1*$base-font;
 }
 
 /*remove bullets*/
 #skills ul {
-  list-style:none !important;  
+  list-style:none !important;
   margin: 0;
   padding: 0;
-  margin-bottom:35px;
+  font-size:1*$base-font;
+  line-height:2*$base-font;
+  margin-bottom:2*$base-font;
 }
 
-/*sub-header size and color*/
-#skills h2 {
-  font-size:18px;
-  color: #0052a4;
-}
 
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------Works---------------------------------------------------------*/
@@ -218,61 +249,27 @@ body {
 #works {
   text-align:center;
   max-width:1000px;
-  margin: 70px auto;
-  margin-bottom:40px;
+  margin: $base-font*3 auto;
 }
 
 /*"My Projects" header*/
 #works h1 {
-  font-size:24px;
+  font-size:$base-font*2;
+  letter-spacing:-.5px;
   font-weight:bold;
-  margin-bottom:40px;
+  margin-bottom:$base-font*2;
 }
 
 /*more space, spacing, size*/
-#works p {
-  font-size:18px;
-  line-height:27px;
-  margin-bottom:40px;  
-  max-width:90%;
+#works .works-description {
+  font-size:$base-font;
+  line-height:$base-font*2;
+  margin-bottom:$base-font*2; 
+  width:90%;
+  max-width:1000px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-}
-
-/*cards are too big for large screens, border changes*/
-#works .card {
-  max-width:500px;
-  margin:auto;  
-  margin:5px;
-  margin-bottom:30px;
-  border-color: #0052a4;
-  border-radius:10px;
-  min-width:300px;  
-  box-shadow: 0px 15px 10px -10px #888888;
-}
-
-/*sub-header size and color*/
-#works .card-title {
-  font-size:24px;
-  color: #0052a4;
-  font-weight:500;
-}
-
-/*max image size is image size*/
-#works img {
-  max-width:420px;
-  max-height:300px;
-  margin:0px auto;
-  margin-top:8px;
-  border-radius:10px;
-  border:2px solid #cccccc;
-  box-shadow: 0px 3px 2px -2px #888888;
-}
-
-/*inline isn't working some reason so sets width of image when container is small like on mobile*/
-#works .card-img-top {
-  width:95%;
 }
 
 #works .card-deck {
@@ -280,26 +277,71 @@ body {
   margin-left:0px;
 }
 
-/*space*/
-#works .card-subtitle {
-  margin: 20px 0px;
-  margin-bottom:20px;
+/*cards are too big for large screens, border changes*/
+#works .card {
+  max-width:500px;
+  margin-bottom:$base-font*2;
+  border-color: $my-blue;
+  border-radius:10px;
+  min-width:300px;  
+  box-shadow: 0px 15px 10px -10px #888888;
+}
+
+
+/*max image size is image size*/
+#works .card-img-container {
+  max-width:420px;
+  max-height:300px;
+  margin:$base-font 5px;
+  border-radius:10px;
+  border:2px solid #cccccc;
+  box-shadow: 0px 3px 2px -2px #888888;
+  overflow:hidden;
+}
+
+#works img {  
+  transition: transform .5s ease;
+}
+
+#works img:hover {
+  transform: scale(1.5) rotate(-17deg);
+}
+
+/*inline isn't working some reason so sets width of image when container is small like on mobile*/
+#works .card-img-top {
+  width:95%;
+}
+
+
+/*sub-header size and color*/
+#works .card-title {
+  font-size:$base-font*1.5;
+  color: $my-blue;
+  font-weight:500;
+  margin-bottom:$base-font;
+}
+
+#works .card-text {
+  font-size:$base-font;
+  margin: $base-font 0px;
+  line-height:$base-font*1.5;
 }
 
 /*font prefs, space*/
 #works .summary {  
-  font-size:20px;
-  color: #0052a4;
+  font-size:$base-font;
+  line-height:$base-font*2;
+  color: $my-blue;
   font-weight:500;
-  margin-bottom:20px;
+  margin-bottom:$base-font;
 }
 
 /*change primary blue to my website blue, other preferences*/
 #works .btn-outline-primary {
-  color: #0052a4 !important;
-  border-color: #0052a4 !important;
+  color: $my-blue !important;
+  border-color: $my-blue !important;
   border-width:2px !important;
-  font-size:18px !important;
+  font-size:$base-font;
   border-radius:20px !important;
   font-weight:500 !important;
 }
@@ -307,7 +349,7 @@ body {
 /*change primary blue to my website blue*/
 #works .btn-outline-primary:hover {
   color: white !important;
-  background-color: #0052a4 !important;
+  background-color: $my-blue !important;
 }
 
 /*change secondary color, other preferences*/
@@ -315,7 +357,7 @@ body {
   color: #28a6a7 ;
   border-color: #28a6a7 ;
   border-width:2px !important;
-  font-size:18px !important;
+  font-size:$base-font !important;
   border-radius:20px !important;
   font-weight:500 !important;
   width:119.48px;
@@ -382,7 +424,7 @@ body {
 #testimonials h2 {
   font-size:20px;
   font-weight: 800;
-  color:#0052a4;
+  color:$my-blue;
 }
 
 #testimonials h3 {
@@ -396,19 +438,18 @@ body {
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
 #cta-wrapper {
-  background-color:#0052a4;
+  background-color:$my-blue;
   margin-bottom:-1px;
-  padding-bottom:10px;
 }
 
 #cta-block {
-  background-color:#0052a4;
+  background-color:$my-blue;
   height:100px;
   margin-bottom:-180px;
 }
 
 #call-to-action {
-  background-color:#293347;
+  background-color:$my-black;
   border-radius:10px;
   color:white;
   text-align: center;
@@ -428,8 +469,8 @@ body {
 /*change primary blue to my website blue, other preferences*/
 #call-to-action .btn-outline-primary {
   color: white !important;
-  background-color:#293347;
-  border-color: #0052a4 !important;
+  background-color:$my-black;
+  border-color: $my-blue !important;
   border-width:2px !important;
   font-size:18px !important;
   border-radius:40px !important;
@@ -442,7 +483,7 @@ body {
 /*change primary blue to my website blue*/
 #call-to-action .btn-outline-primary:hover {
   color: white !important;
-  background-color: #0052a4 !important;
+  background-color: $my-blue !important;
 }
 
 #call-to-action h1 {
@@ -456,52 +497,42 @@ body {
 
 /*foot height, space, color*/
 #bottom {
-  height:600px;
-  padding-top:100px;
-  background-color: #0052a4;
+  padding-top:$base-font*3;
+  background-color: $my-blue;
   text-align:center;
 }
 
 /*ethan vernon ant head*/
 #bottom .my-logo {
-  width:300px;
-}
-
-/*quote, slightly less white*/
-#bottom h1 {
-  font-size:24px;
-  color:#d8d8d8;
-  margin-top:70px;
-  font-weight:400;
+  width:90vw;
+  max-width:300px;
+  padding-top:0px;
 }
 
 /*space for buttons*/
 #bottom .my-links {
-  margin: 80px 20px;
+  margin: $base-font*3 $base-font;
+  line-height:$base-font*2.5;
 }
 
 /*space between buttons*/
 #bottom .fa-layers {
-  margin: 0px 20px;
+  margin: 0px $base-font;
 }
 
 /*non-hover color for circles*/
 #bottom .icon-circles-white {
-  color:white;/*
-  border: 5px solid #0052a4;
-  border-radius:50%;*/
+  color:white;
 }
 
 /*hover color for circles*/
 #bottom .icon-circles-dark {
-  color:#293347;/*
-  border: 5px solid white;
-  border-radius:50%;*/
+  color:$my-black;
 }
 
 /*non-hover icon color*/
 #bottom .icon-inners-dark {
-  color:#0052a4;
+  color:$my-blue;
   margin-left:8px;
 }
 
@@ -519,6 +550,8 @@ body {
 /*less white copyright font*/
 #copyright {
   color:#d8d8d8;
+  line-height:$base-font;
+  margin-bottom:$base-font*2;
 }
 
 
@@ -526,7 +559,7 @@ body {
 /*---------------------------------------------------------------Media queries >767px------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
   /*avatar can be a bit bigger on large screens*/
   .avatar {
     height:225px;
@@ -534,12 +567,8 @@ body {
 
   /*bigger for large screen*/
   #title h1 {
-    font-size:40px;
-  }
-
-  /*bigger header*/
-  #profile h1 {
-    font-size:29px;
+    font-size:$base-font*3;
+    line-height:$base-font*4;
   }
 
   /*too much space on large screen*/
@@ -549,35 +578,7 @@ body {
 
   /*cards need uniformity when displayed adjacent*/
   #works .card {
-    height:670px;
-    padding:0px 5px;    
-    margin-bottom:25px !important;
-  }
-
-  /*cards need uniformity when displayed adjacent*/
-  #works .card-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /*cards need uniformity when displayed adjacent*/
-  #works .card-subtitle {
-    height:48px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /*cards need uniformity when displayed adjacent*/
-  #works .card-text {  
-    height:108px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height:850px;
   }
 }
 
@@ -586,52 +587,28 @@ body {
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 1000px) {
-  /*avatar can be a bit bigger on large screens*/
-  #skills {
-    margin-right:100px;
-    margin-left:100px;
-  }
 
   /*bigger for large screen*/
   #title h1 {
-    font-size:48px;
+    font-size:$base-font*3.5;
+    line-height:$base-font*4.5;
+    margin-bottom:0px
   }  
 
-  /*bigger header*/
+  #title p {
+    font-size:$base-font*2;
+    line-height:$base-font*3;
+    max-width:1000px
+  }
+
   #profile h1 {
-    font-size:32px;
+    font-size:$base-font*2;
+    line-height:$base-font*3;
   }
 
-  /*cards need uniformity when displayed adjacent*/
-  #works .card {
-    padding:0px 5px;
-  }
-
-  /*cards need uniformity when displayed adjacent*/
-  #works .card-title {
-    height:72px;    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /*cards need uniformity when displayed adjacent*/
-  #works .card-subtitle {
-    height: 48px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /*cards need uniformity when displayed adjacent*/
-  #works .card-text {
-    height:108px;    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  #profile p {
+    font-size:$base-font*1.5;
+    line-height:$base-font*2.5;
   }
 }
 
@@ -646,6 +623,46 @@ body {
   .my-logo {
     width:140px;
     padding-top:14px;
+  }
+
+  .nav-bar-pref {
+    height:75px;
+    padding-bottom:5px
+  }
+
+  .navbar {
+    height:100%;
+  }
+
+  #title {
+    padding-top:75px;
+  }
+
+  #title h1 {
+    font-size:$base-font*2.5;
+    line-height:$base-font*3;
+    margin-bottom:0px;
+  }  
+
+  #title p {
+    font-weight:500;
+    font-size:$base-font*1;
+    line-height:$base-font*1.5;
+    margin-bottom:$base-font;
+  }
+
+  #profile h1 {
+    font-size:$base-font*2;
+    line-height:$base-font*2.5;
+  }
+
+  #profile p {
+    font-size:$base-font;
+    line-height:$base-font*2;
+  }
+
+  .avatar {
+    margin-top:0px
   }
 
   /*button too big*/

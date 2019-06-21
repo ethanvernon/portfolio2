@@ -9,11 +9,11 @@ export class Profile extends Component {
     	<div id='profile'>
 		<Container><Row><Col>
 			<h1>
-				Hello, I'm Ethan. I'd like to join your team.
+				Hello, I'm Ethan, <a href="http://www.fromgaming.com/contact.html" target='__blank'>hire me!</a>
 			</h1>
 			<p>
-				I'm a full-stack JavaScript developer that has spent the last couple years in Shenzhen, China.
-				I enjoy studying new technologies and using them in personal projects.
+				I was teaching in China, playing computer games every night, not knowing where I was going in life... Then I started this journey and haven't looked back!
+				Now I'm in Denver, CO, looking for the right team to join.
 				Take a look at my <a href="#skills">skills</a>, some of my most recent <a href="#works">projects</a>, and read some of my managers' <a href="#testimonials">testimonials</a> below.
 			</p>
 			<a href={resume} target='__blank'>

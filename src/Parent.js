@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.scss';
 import {NavHeader} from './NavHeader';
 import {Title} from './Title';
 import {Profile} from './Profile';

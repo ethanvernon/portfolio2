@@ -13,7 +13,7 @@ export class CallToAction extends Component {
 					<Row>
 						<Col md='4'>
 							<h1>
-								Make a hire
+								Reach out!
 							</h1>
 						</Col>
 						<Col md='4'>
@@ -24,7 +24,7 @@ export class CallToAction extends Component {
 						<Col md='4'>
 							<a href ="http://www.fromgaming.com/contact.html">
 							<Button outline color="primary">
-								Get in touch
+								Hire Me
 							</Button>
 							</a>
 						</Col>
