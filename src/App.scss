@@ -470,6 +470,8 @@ $base-font: 18px;
   width:95%;
   max-width:1000px;
   margin-bottom:-72px;
+  position:relative;
+  z-index:1;
 }
 
 #call-to-action .container {
@@ -526,7 +528,6 @@ $base-font: 18px;
   padding-top:$base-font*3+72px;
   background-color: $my-blue;
   text-align:center;
-  z-index:-1;
   position:relative;
 }
 
