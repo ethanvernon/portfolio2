@@ -8,7 +8,7 @@ export class Title extends Component {
 			<div id='title'>
 				<div className='title-container'>
 					<h1 className="display-5">Full-stack Web Developer</h1>
-					<p className="lead">I'm an full-stack web developer in Chicago, IL. I learned to code while teaching abroad in China!</p>
+					<p className="lead">I'm a full-stack web developer in Chicago, IL. I learned to code while teaching abroad in China!</p>
 					<img className='avatar' src={myAvatar} />
 				</div>
 			</div>
