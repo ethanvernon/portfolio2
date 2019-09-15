@@ -3,31 +3,31 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Button } from 'reactstrap';
 
 export class CallToAction extends Component {
-  render() {
-    return (
-    	<div id='call-to-action'>
-			<Container>
-				<Row>
-					<Col md='4'>
-						<h3 className="call-to-action-command">
-							Reach out!
+	render() {
+		return (
+			<div id='call-to-action'>
+				<Container>
+					<Row>
+						<Col md='4'>
+							<h3 className="call-to-action-command">
+								Let's talk!
 						</h3>
-					</Col>
-					<Col md='4'>
-						<p className='call-to-action-description'>
-							Looking for a new addition to your team? Let's get in touch.
+						</Col>
+						<Col md='4'>
+							<p className='call-to-action-description'>
+								I'm always looking for opportunities.
 						</p>
-					</Col>
-					<Col md='4'>
-						<a href ="http://www.fromgaming.com/contact.html">
-						<Button outline color="primary">
-							Hire Me
+						</Col>
+						<Col md='4'>
+							<a href="http://www.fromgaming.com/contact.html">
+								<Button outline color="primary">
+									Contact me
 						</Button>
-						</a>
-					</Col>
-				</Row>
-			</Container>
-		</div>
-    );
-  }
+							</a>
+						</Col>
+					</Row>
+				</Container>
+			</div>
+		);
+	}
 }
